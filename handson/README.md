@@ -91,7 +91,7 @@ $ kubectl apply -f deployment.yaml --kubeconfig=kubeconfig.yaml
 # svc の作成
 $ kubectl apply -f service.yaml --kubeconfig=kubeconfig.yaml
 # アクセスの為に`kubectl` にプロキシをしてもらいます
-$ kubectl kubectl port-forward svc/webweb-preview02 8080:8080 --kubeconfig=kubeconfig.yaml
+$ kubectl port-forward svc/webweb-preview02 8080:8080 --kubeconfig=kubeconfig.yaml
 # 確認
 $ curl 127.0.0.1:8080
 ```
